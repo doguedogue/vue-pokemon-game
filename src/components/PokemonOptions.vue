@@ -19,6 +19,7 @@ export default {
 <style>
 ul {
     list-style-type: none;
+    padding-inline-start: 0px;
 }
 li {
     background-color: white;
@@ -34,8 +35,9 @@ li:hover {
 }
 
 .options-container {
-    margin-top: 30px;
+    margin-top: 155px;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 </style>
