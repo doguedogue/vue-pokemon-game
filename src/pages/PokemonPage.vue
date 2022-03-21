@@ -2,9 +2,12 @@
     <div class="hero__title">
         <h1><a href="https://doguedogue.github.io" class="hero">Dominic's Pokémon Quiz</a></h1>
     </div>
-    <h1>¿Quién es este Pokémon?</h1>
-    <pokemon-picture :pokemonId="54" :showPokemon="true"></pokemon-picture>
-    <pokemon-options :pokemons="pokemonArr"></pokemon-options>
+    <h1 v-if="!pokemon">Espere por favor ...</h1>
+    <div v-else>
+        <h1>¿Quién es este Pokémon?</h1>
+        <pokemon-picture :pokemonId="pokemon.id" :showPokemon="showPokemon"/>
+        <pokemon-options :pokemons="pokemonArr"/>
+    </div>
 </template>
 <script>
 import PokemonOptions from '@/components/PokemonOptions'
@@ -13,20 +16,24 @@ import PokemonPicture from '@/components/PokemonPicture'
 import getPokemonOptions from '@/helpers/getPokemonOptions'
 
 export default {
-  name: 'App',
   components: {
     PokemonPicture,
     PokemonOptions,
   },
   data() {
       return {
-          pokemonArr: []
+          pokemonArr: [],
+          pokemon: null,
+          showPokemon: false
       }
   },
   methods: {
       async mixPokemonArray(){
           this.pokemonArr = await getPokemonOptions()
-        //   console.log(this.pokemonArr)
+
+          const rndInt = Math.floor(Math.random() * 4)
+          this.pokemon = this.pokemonArr[rndInt]
+
       }
   },
   mounted() {
