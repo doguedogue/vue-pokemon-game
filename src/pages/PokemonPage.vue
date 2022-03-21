@@ -4,7 +4,6 @@
     </div>
     <h1>¿Quién es este Pokémon?</h1>
 
-    <!-- TODO IMG -->
     <pokemon-picture :pokemonId="4" :showPokemon="true"></pokemon-picture>
 
     <!-- TODO Opciones -->
@@ -14,6 +13,9 @@
 <script>
 import PokemonOptions from '@/components/PokemonOptions'
 import PokemonPicture from '@/components/PokemonPicture'
+import getPokemonOptions from '@/helpers/getPokemonOptions'
+
+console.log(getPokemonOptions())
 
 export default {
   name: 'App',
