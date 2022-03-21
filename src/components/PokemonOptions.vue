@@ -23,10 +23,11 @@ ul {
 }
 li {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     cursor: pointer;
     margin-bottom: 10px;
+    padding: 15px;
     width: 250px;
     color: black;
 }

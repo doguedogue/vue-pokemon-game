@@ -4,7 +4,7 @@
     </div>
     <h1>¿Quién es este Pokémon?</h1>
 
-    <pokemon-picture :pokemonId="28" :showPokemon="true"></pokemon-picture>
+    <pokemon-picture :pokemonId="26" :showPokemon="false"></pokemon-picture>
 
     <!-- TODO Opciones -->
     <pokemon-options></pokemon-options>
@@ -32,7 +32,7 @@ export default {
 }
 .hero{
     font-family: Avenir, Helvetica, Arial, sans-serif;
-    background: white;
+    background-image: linear-gradient(to right bottom, #e81c24, #f45413, #fc7c00, #ffa000, #ffc300);
     color: black;
     padding: 10px 40px;
     border-radius: 20px;
@@ -41,10 +41,11 @@ export default {
 
 @media screen and (max-width:767px){
     .hero{
-        font-size: 1.2rem;
+        font-size: 1.35rem;
+        padding: 10px 20px;
     }
     h1{
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
     }
 }
 
