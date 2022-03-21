@@ -1,5 +1,4 @@
-# Dominic's Pokémon Quiz (Vue)
-
+# Dominic's Pokémon Quiz
 
 ![](src/assets/1647885052566.png)
 

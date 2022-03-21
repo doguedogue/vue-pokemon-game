@@ -44,9 +44,6 @@ export default {
         font-size: 1.35rem;
         padding: 10px 20px;
     }
-    h1{
-        /* font-size: 1.2rem; */
-    }
 }
 
 </style>
