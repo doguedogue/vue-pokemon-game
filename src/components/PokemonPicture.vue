@@ -1,5 +1,5 @@
 <template>
-  <div class="pokemon-container">
+  <div class="pokemon-container" v-bind:class="{ visible: showPokemon }">
     <img class="hidden-pokemon" :src="imgSrc" alt="pokemon">
 
     <img v-if="showPokemon" class="fade-in" :src="imgSrc" alt="pokemon">
@@ -33,6 +33,7 @@ export default {
     display: flex;
     justify-content: center;
     align-content: center;
+    filter: drop-shadow(0 0 80px gold);
 }
 
 img {    
@@ -44,8 +45,15 @@ img {
     -webkit-user-drag: none;
     -webkit-user-select: none;
 }
+
+.visible {
+  filter: drop-shadow(0 0 80px rgb(53, 24, 14));
+}
+
 .hidden-pokemon {
+
     filter: brightness(0);
+    
 }
 
 </style>

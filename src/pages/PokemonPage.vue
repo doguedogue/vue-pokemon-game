@@ -3,12 +3,8 @@
         <h1><a href="https://doguedogue.github.io" class="hero">Dominic's Pokémon Quiz</a></h1>
     </div>
     <h1>¿Quién es este Pokémon?</h1>
-
     <pokemon-picture :pokemonId="54" :showPokemon="false"></pokemon-picture>
-
-    <!-- TODO Opciones -->
     <pokemon-options :pokemons="pokemonArr"></pokemon-options>
-
 </template>
 <script>
 import PokemonOptions from '@/components/PokemonOptions'
