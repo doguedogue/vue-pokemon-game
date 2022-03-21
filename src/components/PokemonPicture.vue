@@ -33,7 +33,7 @@ export default {
     display: flex;
     justify-content: center;
     align-content: center;
-    filter: drop-shadow(0 0 80px gold);
+    filter: drop-shadow(0 0 40px gold);
 }
 
 img {    
@@ -47,7 +47,7 @@ img {
 }
 
 .visible {
-  filter: drop-shadow(0 0 80px rgb(53, 24, 14));
+  filter: drop-shadow(0 0 40px rgb(53, 24, 14));
 }
 
 .hidden-pokemon {

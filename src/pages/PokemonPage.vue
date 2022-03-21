@@ -3,7 +3,7 @@
         <h1><a href="https://doguedogue.github.io" class="hero">Dominic's Pokémon Quiz</a></h1>
     </div>
     <h1>¿Quién es este Pokémon?</h1>
-    <pokemon-picture :pokemonId="54" :showPokemon="false"></pokemon-picture>
+    <pokemon-picture :pokemonId="54" :showPokemon="true"></pokemon-picture>
     <pokemon-options :pokemons="pokemonArr"></pokemon-options>
 </template>
 <script>
@@ -49,6 +49,13 @@ export default {
 }
 
 @media screen and (max-width:767px){
+    .hero{
+        font-size: 1.5rem;
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width:348px){
     .hero{
         font-size: 1.35rem;
         padding: 10px 20px;
