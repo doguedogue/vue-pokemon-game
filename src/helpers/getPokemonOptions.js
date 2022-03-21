@@ -8,7 +8,7 @@ const getPokemons = () => {
 const getPokemonOptions = async () => {
     const mixPokemons = getPokemons().sort( () => Math.random() - 0.5)
     const pokemones = await getPokemonsNames( mixPokemons.splice(0, 4))
-    // console.table(pokemones) //beutiful
+    // console.table(pokemones) //beautiful
     return pokemones
 }
 
