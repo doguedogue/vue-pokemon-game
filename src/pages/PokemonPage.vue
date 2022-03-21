@@ -4,7 +4,7 @@
     </div>
     <h1>¿Quién es este Pokémon?</h1>
 
-    <pokemon-picture :pokemonId="649" :showPokemon="true"></pokemon-picture>
+    <pokemon-picture :pokemonId="28" :showPokemon="true"></pokemon-picture>
 
     <!-- TODO Opciones -->
     <pokemon-options></pokemon-options>

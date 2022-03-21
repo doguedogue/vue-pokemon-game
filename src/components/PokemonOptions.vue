@@ -28,6 +28,7 @@ li {
     cursor: pointer;
     margin-bottom: 10px;
     width: 250px;
+    color: black;
 }
 
 li:hover {
@@ -35,7 +36,7 @@ li:hover {
 }
 
 .options-container {
-    margin-top: 155px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     text-align: center;
