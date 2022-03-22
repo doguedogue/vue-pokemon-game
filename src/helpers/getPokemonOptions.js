@@ -25,11 +25,15 @@ const getPokemonsNames = async ([a, b, c, d] = []) => {
     ]    
     const [p1, p2, p3, p4] = await Promise.all( promiseArr)
     return [
-        {name: p1.data.name, id: p1.data.id},
-        {name: p2.data.name, id: p2.data.id},
-        {name: p3.data.name, id: p3.data.id},
-        {name: p4.data.name, id: p4.data.id},
+        {name: capitalize(p1.data.name), id: p1.data.id},
+        {name: capitalize(p2.data.name), id: p2.data.id},
+        {name: capitalize(p3.data.name), id: p3.data.id},
+        {name: capitalize(p4.data.name), id: p4.data.id},
     ]
+}
+
+const capitalize = (text) => {
+    return text[0].toUpperCase() + text.substring(1);
 }
 
 export default getPokemonOptions

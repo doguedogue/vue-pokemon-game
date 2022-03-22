@@ -1,7 +1,11 @@
 <template>
   <div class="options-container">
     <ul>
-      <li class="lipokemon" v-for="pokemon in pokemons" :key="pokemon.id">
+      <li
+        class="lipokemon"
+        v-for="pokemon in pokemons"
+        :key="pokemon.id"
+        @click="$emit('pokemon-selection', pokemon.id)">
         {{pokemon.name}}
       </li>
     </ul>
@@ -24,6 +28,7 @@ export default {
 ul {
     list-style-type: none;
     padding-inline-start: 0px;
+    margin-bottom: 0px;
 }
 li {
     background-color: white;
