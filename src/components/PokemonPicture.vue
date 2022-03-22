@@ -1,8 +1,16 @@
 <template>
   <div class="pokemon-container" v-bind:class="{ visible: showPokemon }">
-    <img class="hidden-pokemon" :src="imgSrc" alt="pokemon">
+    <img
+      v-if="!showPokemon"
+      class="hidden-pokemon"
+      :src="imgSrc"
+      alt="pokemon">
 
-    <img v-if="showPokemon" class="fade-in" :src="imgSrc" alt="pokemon">
+    <img
+      v-else
+      class="fade-in"
+      :src="imgSrc"
+      alt="pokemon">
   </div>
 </template>
 
